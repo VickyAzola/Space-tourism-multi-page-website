@@ -48,7 +48,7 @@ function App() {
             <div className='hidden md:flex items-center w-full'>
                 <div className='hidden lg:block h-[0.063rem] w-[29.563rem] bg-white/20 relative z-10 mr-[-2%]'></div>
                 <ul className='relative top-0 text-white backdrop-blur-lg bg-white/10 flex items-center md:gap-x-10 
-                lg:max-w-[51.875rem] lg:gap-x-6 md:px-14 lg:pl-28 pr-4 h-[6rem] w-full'>
+                lg:gap-x-6 md:px-14 lg:pl-28 pr-4 h-[6rem] w-full'>
                     {navItems.map((item) => (
                     <li key={item.id}
                     >
