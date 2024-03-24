@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.barlow-CondensedFont {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.bellefairFont {
+    font-family: 'Bellefair', serif;
+}
+
+.barlowFont {
+    font-family: 'Barlow', sans-serif;
+}
+
+.homePage {
+    min-height: 100vh;
+    background-image: url('/assets/home/background-home-mobile.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+.destination {
+    min-height: 100vh;
+    background-image: url('/assets/destination/background-destination-mobile.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+.crew {
+    min-height: 100vh;
+    background-image: url('/assets/crew/background-crew-mobile.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+.technology {
+    min-height: 100vh;
+    background-image: url('/assets/technology/background-technology-mobile.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+@media screen and (min-width: 429px) {
+    .homePage {
+        background-image: url('/assets/home/background-home-tablet.jpg');
+    }
+
+    .destination {
+        background-image: url('/assets/destination/background-destination-tablet.jpg');
+    }
+
+    .crew {
+        background-image: url('/assets/crew/background-crew-tablet.jpg');
+    }
+
+    .technology {
+        background-image: url('/assets/technology/background-technology-tablet.jpg');
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .homePage {
+        background-image: url('/assets/home/background-home-desktop.jpg');
+    }
+
+    .destination {
+        background-image: url('/assets/destination/background-destination-desktop.jpg');
+    }
+
+    .crew {
+        background-image: url('/assets/crew/background-crew-desktop.jpg');
+    }
+
+    .technology {
+        background-image: url('/assets/technology/background-technology-desktop.jpg');
+    }
+}
