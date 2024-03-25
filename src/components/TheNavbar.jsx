@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { NavLink } from "react-router-dom";
 import Logo from '/assets/shared/logo.svg'
 import Hamburger from '/assets/shared/icon-hamburger.svg'
 import Close from '/assets/shared/icon-close.svg'
@@ -22,11 +23,11 @@ function App() {
         {id: 3, num: '03', text: 'TECHNOLOGY', link: '/technology' },
     ];
 
-    // Object containing style for navLinks on desktop
-    const styleLinks = {
-        base: 'h-full py-9 tracking-[2.7px] hover:cursor-pointer hover:border-b-2 hover:border-b-white/70',
-        active: 'border-b-2 border-b-white'
+    const baseStyleLinks = {
+        base: 'h-full py-9 tracking-[2.7px] hover:cursor-pointer hover:border-b-2 hover:border-b-white/60',
+        active: 'h-full py-9 tracking-[2.7px] border-b-2 border-b-white'
     }
+    
 
     return (
         <>
@@ -52,11 +53,11 @@ function App() {
                     {navItems.map((item) => (
                     <li key={item.id}
                     >
-                        <a 
-                            href={item.link}
-                            className={styleLinks.base}>
+                        <NavLink 
+                            to={item.link}
+                            className={({ isActive }) => isActive ? baseStyleLinks.active : baseStyleLinks.base}>
                             <span className='font-bold mr-1 sm:block md:hidden lg:inline-block'>{item.num} </span> {item.text}
-                        </a>
+                        </NavLink>
                     </li>
                     ))}
                 </ul>
