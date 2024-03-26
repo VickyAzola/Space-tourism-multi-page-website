@@ -46,7 +46,7 @@ function CardTechnology() {
     return (
         <>
             <article 
-                className="grid place-items-center lg:grid-cols-2 lg:items-center">
+                className="lg:pl-10 grid place-items-center lg:grid-cols-2 lg:gap-x-20 lg:items-center">
                 
                 {/* Image, change depending on width*/}
                 <div className='w-full h-full lg:h-auto md:w-auto lg:order-last lg:inset-rigth-0 lg:ml-auto'>
