@@ -30,7 +30,7 @@ function HomePage() {
                 <div className='w-full lg:flex lg:justify-end'>
                     <a  
                         href='https://github.com/VickyAzola/Space-tourism-multi-page-website'
-                        target=_blank'
+                        target='_blank'
                         className='bellefairFont mx-auto lg:mx-0 text-[1.25rem] md:text-[2rem] text-[#0B0D17] tracking-[2.7px] bg-white 
                         h-[9.375rem] w-[9.375rem] md:h-[15.125rem] md:w-[15.125rem] lg:h-[17.125rem] lg:w-[17.125rem] aspect-square
                         rounded-full grid place-items-center hover:shadow-[0_0_0_2rem_rgba(255,255,255,0.15)] 
